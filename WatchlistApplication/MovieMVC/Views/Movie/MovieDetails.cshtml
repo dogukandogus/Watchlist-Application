@@ -1,0 +1,30 @@
+﻿@using MovieMVC.Models.ViewModels;
+@model MovieVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Watchlist Application!</h1>
+</div>
+<hr />
+<div>
+    <div class="row">
+        @foreach (var item in Model.mList)
+        {
+            <div class="card text-white bg-secondary mb-3" style="max-width: 19rem;">
+                <div class="card-header">@item.CategoryName</div>
+                <div class="card-body">
+                    <h5 class="card-title">@item.MovieName</h5>
+                    <p class="card-text">@item.About</p>
+                </div>
+                    <div class="card-footer">Release Date: @item.ReleaseDate</div>
+            </div>
+        }
+
+    </div>
+</div>
+<div>
+    <a class="btn btn-outline-success" asp-action="MovieList">Add more Movie</a>
+</div>

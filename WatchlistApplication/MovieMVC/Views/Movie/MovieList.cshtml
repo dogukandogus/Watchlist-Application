@@ -1,0 +1,47 @@
+﻿@using MovieMVC.Models.ViewModels;
+@model MovieVM
+
+
+<h1> Movies </h1>
+<br />
+@if (TempData["result"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["result"]
+    </div>
+}
+<br />
+<table class="table table-hover table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Movie.MovieId)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie.MovieName)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie.Category.CategoryName)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie.About)</th>
+            <th>@Html.DisplayNameFor(model => model.Movie.ReleaseDate)</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.mList)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => item.MovieId)</td>
+                <td>@Html.DisplayFor(x => item.MovieName)</td>
+                <td>@Html.DisplayFor(x => item.CategoryName)</td>
+                <td>@Html.DisplayFor(x => item.About)</td>
+                <td>@Html.DisplayFor(x => item.ReleaseDate)</td>
+                <td class="align-middle text-center">
+                    <div class="btn-group d-flex justify-content-center">
+                        <a asp-action="DeleteMovie" asp-controller="Movie" asp-route-id="@item.MovieId" class="btn btn-danger btn-rounded">Delete</a>&nbsp;
+                        <a asp-action="EditMovie" asp-controller="Movie" asp-route-id="@item.MovieId" class="btn btn-warning btn-rounded">Edit</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<div>
+    <a asp-action="CreateMovie" class="btn btn-outline-primary">Add New Movie</a>
+</div>

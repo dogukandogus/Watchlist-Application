@@ -1,0 +1,44 @@
+﻿@using MovieMVC.Models.ViewModels;
+@model CategoryVM
+
+
+<h1> Movie Categories</h1>
+<br />
+@if (TempData["result"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["result"]
+    </div>
+}
+<br />
+<table class="table table-hover table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.Category.CategoryId)</th>
+            <th>@Html.DisplayNameFor(x => x.Category.CategoryName)</th>
+            <th>@Html.DisplayNameFor(x => x.Category.Description)</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.cList)
+        {
+            <tr>
+                <td>@Html.DisplayFor(x => item.CategoryId)</td>
+                <td>@Html.DisplayFor(x => item.CategoryName)</td>
+                <td>@Html.DisplayFor(x => item.Description)</td>
+                <td class="align-middle text-center">
+                    <div class="btn-group d-flex justify-content-center">
+                        <a asp-action="DeleteCategory" asp-controller="Movie" asp-route-id="@item.CategoryId" class="btn btn-danger btn-rounded">Delete</a>&nbsp;
+                        <a asp-action="EditCategory" asp-controller="Movie" asp-route-id="@item.CategoryId" class="btn btn-warning btn-rounded">Edit</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+<div>
+    <a asp-action="CreateCategory" class="btn btn-outline-primary">Add New Category</a>
+</div>
+
