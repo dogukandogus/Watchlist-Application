@@ -2019,11 +2019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\VS\\MVC\\MovieMVC\\MovieMVC\\MovieMVC.csproj",
+      "projectUniqueName": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\gitProjeler\\WatchlistApplication\\WatchlistApplication\\MovieMVC\\MovieMVC.csproj",
       "projectName": "MovieMVC",
-      "projectPath": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\VS\\MVC\\MovieMVC\\MovieMVC\\MovieMVC.csproj",
+      "projectPath": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\gitProjeler\\WatchlistApplication\\WatchlistApplication\\MovieMVC\\MovieMVC.csproj",
       "packagesPath": "C:\\Users\\dogus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\VS\\MVC\\MovieMVC\\MovieMVC\\obj\\",
+      "outputPath": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\gitProjeler\\WatchlistApplication\\WatchlistApplication\\MovieMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dogus\\AppData\\Roaming\\NuGet\\NuGet.Config",

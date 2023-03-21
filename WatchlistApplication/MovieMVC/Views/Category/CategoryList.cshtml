@@ -29,8 +29,8 @@
                 <td>@Html.DisplayFor(x => item.Description)</td>
                 <td class="align-middle text-center">
                     <div class="btn-group d-flex justify-content-center">
-                        <a asp-action="DeleteCategory" asp-controller="Movie" asp-route-id="@item.CategoryId" class="btn btn-danger btn-rounded">Delete</a>&nbsp;
-                        <a asp-action="EditCategory" asp-controller="Movie" asp-route-id="@item.CategoryId" class="btn btn-warning btn-rounded">Edit</a>
+                        <a asp-action="DeleteCategory" asp-controller="Category" asp-route-id="@item.CategoryId" class="btn btn-danger btn-rounded">Delete</a>&nbsp;
+                        <a asp-action="EditCategory" asp-controller="Category" asp-route-id="@item.CategoryId" class="btn btn-warning btn-rounded">Edit</a>
                     </div>
                 </td>
             </tr>
@@ -41,4 +41,3 @@
 <div>
     <a asp-action="CreateCategory" class="btn btn-outline-primary">Add New Category</a>
 </div>
-

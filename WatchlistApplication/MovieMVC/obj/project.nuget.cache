@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZWfXuCtVSw1g2ZQF+mkotc/U6YMuSZeYzPznAsWpylYI7vADEzNOEyIfDoyIGNcZE+k5gi6uU8FBjUY1KGShyA==",
+  "dgSpecHash": "aJaomEqZoHn4IXYSZ9MDhnP2GQhUsQKpoPu5Fryn3JKL5w7KjF112UrdgoFpgQwD8zS8mlOcZvXXCtaIGGi79g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\VS\\MVC\\MovieMVC\\MovieMVC\\MovieMVC.csproj",
+  "projectFilePath": "C:\\Users\\dogus\\OneDrive\\Masaüstü\\gitProjeler\\WatchlistApplication\\WatchlistApplication\\MovieMVC\\MovieMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dogus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dogus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
