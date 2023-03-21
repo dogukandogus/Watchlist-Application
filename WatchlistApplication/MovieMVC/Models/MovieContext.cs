@@ -8,7 +8,7 @@ namespace MovieMVC.Models
         public DbSet<Category> Categories { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-EFOB25G;Database=MovieCategory2DB;Trusted_Connection=true");
+            optionsBuilder.UseSqlServer("Server=.;Database=MovieCategoryDB;Trusted_Connection=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
